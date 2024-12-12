@@ -4,7 +4,7 @@ import { bindActionCreators } from 'redux';
 import { actionCreators } from './state/index';
 
 const Shop = () => {
-    const dispatch = useDispatch();
+    const dispatch = useDispatch(); 
     const balance = useSelector(state => state.amount)
     const { withdrawMoney, depositMoney } = bindActionCreators(actionCreators, dispatch);
   return (
